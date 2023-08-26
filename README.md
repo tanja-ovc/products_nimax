@@ -1,2 +1,2 @@
-# products_nimax
-API для взаимодействия с информацией о товарах. Тестовое задание для "Nimax".
+# Grocery Store
+## for Nimax
