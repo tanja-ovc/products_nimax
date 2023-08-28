@@ -39,6 +39,7 @@ Python 3.10, Django 4.2, DRF 3.14, Docker Compose, PostgreSQL 13.0, Gunicorn 21.
 - по названию (по вхождению строки в название товара)
 
 Спецификация API (доступна по указанным адресам после локального запуска):
+
 http://127.0.0.1/api/schema/swagger-ui/
 
 http://127.0.0.1/api/schema/redoc/
@@ -92,6 +93,7 @@ http://127.0.0.1/api/schema/redoc/
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/17781130-b1981306-1aae-4463-82d1-cc2439261205?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D17781130-b1981306-1aae-4463-82d1-cc2439261205%26entityType%3Dcollection%26workspaceId%3D4b0bafc7-a688-4d2b-b01d-94789dc12117)
 
 Спецификация API:
+
 http://127.0.0.1/api/schema/swagger-ui/
 
 http://127.0.0.1/api/schema/redoc/
