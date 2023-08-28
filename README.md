@@ -54,11 +54,11 @@ http://127.0.0.1/api/schema/redoc/
 
 ```git clone https://github.com/tanja-ovc/products_nimax.git```
 
-Создайте файл с названием .env в директории products_nimax/grocerystore (там же, где .env.example) и заполните его данными из файла .env.example.
+Создайте файл с названием .env в корневой директории /products_nimax (там же, где .env.example) и заполните его данными из файла .env.example.
 
 При необходимости установите Docker Desktop для вашей операционной системы (https://www.docker.com/products/docker-desktop/) и запустите его.
 
-Перейдите в директорию с файлом docker-compose и оттуда выполните команду:
+Убедитесь, что вы в директории с файлом docker-compose, и оттуда выполните команду:
 
 ```docker-compose up -d```
 
@@ -97,6 +97,10 @@ http://127.0.0.1/api/schema/redoc/
 http://127.0.0.1/api/schema/swagger-ui/
 
 http://127.0.0.1/api/schema/redoc/
+
+Для остановки работы контейнеров выполните:
+
+```docker-compose stop```
 
 ### Автор проекта
 
