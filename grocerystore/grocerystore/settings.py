@@ -22,9 +22,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
+    'drf_spectacular',
     'api.apps.ApiConfig',
     'products.apps.ProductsConfig',
-    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -68,8 +69,6 @@ DATABASES = {
     }
 }
 
-# AUTH_USER_MODEL = 'users.User'
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -85,6 +84,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
@@ -93,6 +97,12 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ['http://*.localhost', 'http://*.127.0.0.1']
